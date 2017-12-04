@@ -6,18 +6,19 @@ address: "HBS"      # street address of workshop (e.g., "123 Forth Street, Blimi
 country: "GB"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "EN"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "53.466722, -2.236463"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "Dec 14-15, 2017"    # human-readable date (e.g., "Feb 17-18, 2020")
+humandate: "Jan 29-30, 2018"    # human-readable date (e.g., "Feb 17-18, 2020")
 humantime: "9:30 am - 5:00 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: 2017-12-14      # use YYYY-MM-DD format like 2015-01-01
-enddate: 2017-12-15        # use YYYY-MM-DD format like 2015-01-02
+startdate: 2018-01-29      # use YYYY-MM-DD format like 2015-01-01
+enddate: 2018-01-30        # use YYYY-MM-DD format like 2015-01-02
 instructor: ["Peter Smyth"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["FIXME"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "peter.smyth@manchester.ac.uk"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad:  http://pad.software-carpentry.org/2017-12-14-MAN-SS-PILOT01       # optional (insert the URL for your Etherpad if you're using one)
+etherpad:  http://pad.software-carpentry.org/2018-01-29-MAN-SS-PILOT02       # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 day1_am: "Data organization in spreadsheets and OpenRefine"
-day1_pm: "Introduction to Python"
-day2_am: "SQL for data management"
+day1_pm: "SQL for data management"
+day2_am: "Introduction to R"
+day2_am: "Introduction to R"
 ---
 <!--
   HEADER
@@ -60,16 +61,13 @@ This hands-on workshop teaches basic concepts, skills and tools for working more
 effectively with data. 
 </p>
 <p>
-This is the first of two pilot workshop for the Social Sciences curriculum currently under development at the Univeersity of Manchester.
-In this workshop we will teach the Python language materials and in the second workshop we will cover the R langauge materials. Spreadsheets, OpenRefine and SQL will be taught in both 
-  with the second pilot benefitting from feedback from the first.
+This is the second of two pilot workshops for the Social Sciences curriculum currently under development at the University of Manchester.
+In this workshop we will teach the R programming language materials. The Python language materials were covered in the first workshop. 
+Spreadsheets, OpenRefine and SQL will be taught in both. 
 </p>
+
 <p>
-The normal length of the workshop is two days. However this first workshop is restricted to 1.5 days. 
-Consequently not all of the Python material will be covered in class, but all of the intended materials are on the website.
-</p>
-<p>
-We will cover {{page.day1_am}}, {{page.day1_pm}} and {{page.day2_am}} .
+We will cover {{page.day1_am}}, {{page.day1_pm}} , {{page.day2_am}} and {{page.day2_pm}}.
 
 Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
 </p>
@@ -158,7 +156,7 @@ Participants should bring their laptops and plan to participate actively. By the
 <div class="row">
   <div class="col-md-6">
 
-    <h3>Thursday 14th</h3>
+    <h3>Monday 29th</h3>
     <table class="table table-striped">
       <tr> <td>Morning</td>  <td>{{page.day1_am}}</td> </tr>
       <tr> <td>Morning</td>  <td>{{page.day1_am}}</td> </tr>
@@ -166,9 +164,10 @@ Participants should bring their laptops and plan to participate actively. By the
     </table>
  
  
-    <h3>Friday 15th</h3>
+    <h3>Tuesday 30th</h3>
     <table class="table table-striped">
       <tr> <td>Morning</td>  <td>{{page.day2_am}}</td> </tr>
+      <tr> <td>Morning</td>  <td>{{page.day2_pm}}</td> </tr>
     </table>
  </div>
 </div>
@@ -271,49 +270,6 @@ Participants should bring their laptops and plan to participate actively. By the
 
 
 
-  <div class="col-md-6">
-
-    <h3>Introduction to Python</h3>
-
-    <ul>
-
-      <li>Introduction to Python</li>
-
-      <li>Python basics</li>
-
-      <li>Python control structures</li>
-
-      <li>Loops and conditionals</li>
-
-      <li>Creating re-usable code</li>
-	  
-      <li>Processing data from a file</li>
-
-      <li>Date and Time</li>
-
-      <li>Processing JSON data</li>
-
-      <li>Pandas</li>
-
-      <li>Extracting row and columns</li>
-
-      <li>Aggregations and missing data</li>
-
-      <li>Joining dataframes</li>
-
-      <li>Wide and long data formats</li>
-
-      <li>Data visualisation using Matplotlib</li>
-
-      <li>Accessing SQLite Databases </li>
-	  
-      <li><a href="https://data-lessons.github.io/python-socialsci/">Reference...</a></li>
-
-    </ul>
-
-  </div>
-
-
 
 </div>
 
@@ -354,6 +310,32 @@ Participants should bring their laptops and plan to participate actively. By the
   </div>
 
   
+
+  <div class="col-md-6">
+
+    <h3>Introduction to R</h3>
+
+    <ul>
+
+      <li>R basics</li>
+
+      <li>Reading text files</li>
+
+      <li>Introducing dplyr and tidyr</li>
+
+      <li>Data visualisation with ggplot2</li>
+
+      <li>Using GIT with RStudio</li>
+	  
+      <li>Using a relational database with R</li>
+
+      
+      <li><a href="https://data-lessons.github.io/r-socialsci/">Reference...</a></li>
+
+    </ul>
+
+  </div>
+
 </div>
 
 
